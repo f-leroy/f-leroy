@@ -39,7 +39,7 @@ I design production-ready Azure infrastructure with Terraform. Currently buildin
 
 #### Tech
 
-`Terraform` · `Azure` · `Python` · `FastAPI` · `Astro` · `React` · `TypeScript` · `Tailwind CSS` · `GitHub Actions` · `Docker` · `PostgreSQL` · `MySQL` · `SQL Server` · `CosmosDB` · `Redis` · `Oracle` · `MongoDB`
+`Terraform` · `Azure` · `Python` · `FastAPI` · `Astro` · `React` · `TypeScript` · `Tailwind CSS` · `GitHub Actions` · `Docker` · `SQL Server` · `Oracle` · `PostgreSQL` · `MySQL` · `CosmosDB` · `Redis` · `MongoDB`
 
 ---
 
