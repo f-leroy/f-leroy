@@ -47,4 +47,3 @@ I design production-ready Azure infrastructure with Terraform. Currently buildin
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/)
 [![Website](https://img.shields.io/badge/aethronops.com-0A0A0F?style=flat&logo=googlechrome&logoColor=white)](https://aethronops.com)
-[![Email](https://img.shields.io/badge/aethronops@gmail.com-EA4335?style=flat&logo=gmail&logoColor=white)](mailto:aethronops@gmail.com)
