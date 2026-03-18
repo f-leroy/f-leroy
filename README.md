@@ -1,10 +1,16 @@
-<img src="assets/mct-banner.png" alt="Microsoft Certified Trainer" width="100%" />
+<table><tr><td width="75%">
 
 ### Hey, I'm Frédéric 👋
 
-**Azure Cloud Architect · Microsoft Certified Trainer · Building [AethronOps](https://aethronops.com)**
+**Azure Cloud Architect · Microsoft Certified Trainer**
 
-I design production-ready Azure infrastructure with Terraform. Currently building AethronOps — a platform that generates compliance-proven Terraform stacks using exclusively Azure Verified Modules.
+I design production-ready Azure infrastructure with Terraform. Currently building **[AethronOps](https://aethronops.com)** — a platform that generates compliance-proven Terraform stacks using exclusively Azure Verified Modules.
+
+</td><td width="25%" align="right" valign="top">
+
+<img src="assets/mct-badge.png" width="150" />
+
+</td></tr></table>
 
 ---
 
