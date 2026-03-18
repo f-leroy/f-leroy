@@ -1,3 +1,5 @@
+<img src="assets/mct-banner.png" alt="Microsoft Certified Trainer" width="100%" />
+
 ### Hey, I'm Frédéric 👋
 
 **Azure Cloud Architect · Microsoft Certified Trainer · Building [AethronOps](https://aethronops.com)**
