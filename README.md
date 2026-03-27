@@ -4,7 +4,7 @@
 
 **Azure Cloud Architect · Microsoft Certified Trainer**
 
-As a trainer and architect on Azure, I kept seeing the same struggle: teams deploying infrastructure without security best practices, skipping compliance documentation, and spending weeks on Terraform code that could be standardized. I wanted to make it easier — give people production-ready, secure infrastructure they can trust and deploy in minutes instead of weeks.
+As a trainer and architect on Azure, I know how much time it takes to build production-ready infrastructure the right way — proper networking, security, compliance documentation, everything wired together. I wanted to help teams skip the repetitive work and go straight to deploying with confidence.
 
 That's why I built **[AethronOps](https://aethronops.com)**.
 
