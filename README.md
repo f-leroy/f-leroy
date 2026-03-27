@@ -4,7 +4,7 @@
 
 **Azure Cloud Architect · Microsoft Certified Trainer**
 
-I design production-ready Azure infrastructure with Terraform. Currently building **[AethronOps](https://aethronops.com)** — a platform that generates compliance-proven Terraform stacks using exclusively Azure Verified Modules.
+I design production-ready Azure infrastructure with Terraform. Currently building **[AethronOps](https://aethronops.com)** — a platform that generates compliance-mapped Terraform stacks using exclusively Azure Verified Modules.
 
 </td><td width="25%" align="right" valign="top">
 
@@ -28,10 +28,10 @@ I design production-ready Azure infrastructure with Terraform. Currently buildin
 
 #### What I'm building
 
-**[AethronOps](https://aethronops.com)** — Production-ready Azure Terraform with compliance proof.
+**[AethronOps](https://aethronops.com)** — Production-ready Azure Terraform with compliance mappings.
 
-- 🏗️ **91 stacks** — web apps, AI, databases, networking, governance, compute
-- 🔒 **10 compliance frameworks** — MCSB, NIS2, DORA, RGPD, EU AI Act, CAF, WAF, CIS, ISO 27001, ANSSI
+- 🏗️ **78 stacks** — web apps, AI, databases, networking, governance, compute
+- 🔒 **12 compliance frameworks** — MCSB, NIS2, DORA, RGPD, EU AI Act, CAF, WAF, CIS, ISO 27001, SOC 2, PCI-DSS, ANSSI
 - ⚡ **100% Azure Verified Modules** — zero custom code, zero hallucination
 - 🚫 **Zero access** — no access to your Azure, your repo, or your credentials
 
@@ -45,5 +45,4 @@ I design production-ready Azure infrastructure with Terraform. Currently buildin
 
 #### Connect
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/)
 [![Website](https://img.shields.io/badge/aethronops.com-0A0A0F?style=flat&logo=googlechrome&logoColor=white)](https://aethronops.com)
