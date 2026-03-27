@@ -37,7 +37,7 @@ Setting up production-ready Azure infrastructure is painful:
 
 🔌 **Auto-wired** — networking, identity, monitoring, Key Vault, Private Endpoints... everything is connected. Not just modules dropped in a folder — actual working infrastructure
 
-🔒 **12 compliance frameworks mapped per stack** — each ZIP includes a `SECURITY-POSTURE.md` that maps every resource to MCSB, CAF, WAF, GDPR, NIS2, CIS, ISO 27001, SOC 2, ANSSI, and for regulated stacks: DORA, PCI-DSS, EU AI Act
+🔒 **9 compliance frameworks mapped per stack** — each ZIP includes a `SECURITY-POSTURE.md` that maps every resource to MCSB, CAF, WAF, GDPR, NIS2, CIS, ISO 27001, SOC 2, ANSSI, and for regulated stacks: DORA, PCI-DSS, EU AI Act
 
 ✅ **Validated on real Azure** — every stack passes `terraform validate`, `terraform plan`, `checkov`, and 43+ stacks have been deployed and destroyed on real Azure subscriptions
 
