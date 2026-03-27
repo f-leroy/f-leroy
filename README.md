@@ -4,7 +4,7 @@
 
 **Azure Cloud Architect · Microsoft Certified Trainer**
 
-As a trainer and architect on Azure, I know how much time it takes to build production-ready infrastructure the right way — proper networking, security, compliance documentation, everything wired together. I wanted to help teams skip the repetitive work and go straight to deploying with confidence.
+As a trainer and architect on Azure, I know how much time it takes to build production-ready infrastructure the right way. Azure Verified Modules are great, but each one comes with dozens of variables to configure, wire together, and validate. I wanted to help teams skip the repetitive plumbing and go straight to deploying with confidence.
 
 That's why I built **[AethronOps](https://aethronops.com)**.
 
