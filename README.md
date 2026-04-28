@@ -22,35 +22,35 @@ Setting up production-ready Azure infrastructure is painful:
 
 - Writing Terraform for a typical stack takes **days to weeks**
 - Wiring resources together correctly (networking, identity, monitoring, secrets) is error-prone
-- Security and compliance documentation (MCSB, NIS2, GDPR, DORA...) is tedious and usually skipped
+- Documenting how each resource maps to industry frameworks (MCSB, CAF, WAF, GDPR, NIS2) is tedious and usually skipped
 - Most teams deploy first, then scramble before audits
 
-**AethronOps generates all of this in one click.** You pick a stack, choose your tier (basic/standard/premium), and download a complete Terraform project — validated, wired, and compliance-documented.
+**AethronOps generates all of this in one ZIP.** You pick a stack, choose your mode (dev free / production paid), and download a complete Terraform project — validated, wired, framework-aligned.
 
 ---
 
 #### What makes it different
 
-🏗️ **78 production-ready stacks** — from simple App Service + PostgreSQL to enterprise Landing Zones, AI platforms, and regulated architectures (FinTech PCI, Healthcare HDS)
+🏗️ **11 production-ready stacks** — App Service or Container Apps, paired with PostgreSQL / SQL / Cosmos DB / MySQL / MongoDB, plus a shared Platform Baseline (VNet, NAT, NSG, Redis, Private DNS Zones)
 
-⚡ **100% Azure Verified Modules** — every stack uses Microsoft's official AVM modules. No custom resources, no drift from Azure best practices
+⚡ **Built on Azure Verified Modules** — every stack uses Microsoft's official AVM modules. No custom resources, no drift from Azure best practices. Telemetry off, versions pinned.
 
-🔌 **Auto-wired** — networking, identity, monitoring, Key Vault, Private Endpoints... everything is connected. Not just modules dropped in a folder — actual working infrastructure
+🔌 **Auto-wired** — networking, identity, monitoring, Key Vault, Private Endpoints, Entra-ID passwordless DB auth, EventGrid expiry alerts... 40 to 60 resources connected end-to-end per stack. Not just modules dropped in a folder — actual working infrastructure.
 
-🔒 **9 compliance frameworks mapped per stack** — each ZIP includes a `SECURITY-POSTURE.md` that maps every resource to MCSB, CAF, WAF, GDPR, NIS2, CIS, ISO 27001, SOC 2, ANSSI, and for regulated stacks: DORA, PCI-DSS, EU AI Act
+🔒 **Framework-aligned per stack** — each ZIP includes a `SECURITY-POSTURE.md` mapping ~61 controls to MCSB, CAF, WAF, GDPR/RGPD, NIS2 (with traceability to DORA, CIS, ISO 27001, SOC 2, PCI-DSS). Aligned with — not certified by.
 
-✅ **Validated on real Azure** — every stack passes `terraform validate`, `terraform plan`, `checkov`, and 43+ stacks have been deployed and destroyed on real Azure subscriptions
+✅ **Validated end-to-end on Azure** — every stack passes `terraform validate`, `terraform plan`, `checkov`. Every workload variant has been deployed and torn down on a real Azure subscription before shipping.
 
-🚫 **Zero access to your environment** — we never touch your Azure, your repo, or your credentials. You get a ZIP, you deploy it yourself
+🚫 **Zero access to your environment** — AethronOps never touches your Azure, your repo, or your credentials. You get a ZIP, you deploy it yourself.
 
 ---
 
 #### Who it's for
 
-- **CTOs & DSI** who need compliant Azure infrastructure without hiring a Terraform expert
+- **CTOs & DSI** who need framework-aligned Azure infrastructure without hiring a Terraform expert
 - **Azure consultants** who want to deliver faster with battle-tested templates
 - **DevOps engineers** who are tired of reinventing the wheel for every project
-- **CISOs & compliance teams** who need audit-ready documentation from day one
+- **CISOs & compliance teams** who need audit-prep documentation from day one
 - **Startups** who want enterprise-grade security without the enterprise budget
 
 ---
@@ -58,40 +58,46 @@ Setting up production-ready Azure infrastructure is painful:
 #### How it works
 
 ```
-1. Browse the catalog        → 78 stacks across 14 categories
-2. Pick your tier            → basic (dev) / standard (prod) / premium (enterprise)
+1. Browse the catalog        → 11 stacks · App Service · Container Apps · 5 databases
+2. Pick your mode            → dev (free, MIT) / production (paid, brownfield-ready)
 3. Download your ZIP         → complete Terraform project, ready to deploy
 4. terraform init && apply   → your infrastructure is live
 ```
 
-Every ZIP contains:
+Every production ZIP contains:
 
 ```
-my-project/
-├── main.tf, networking.tf, identity.tf, keyvault.tf, monitoring.tf, ...
-├── wiring.tf               ← everything connected together
-├── finops.tf               ← budget alerts, auto-shutdown, cost optimization
-├── variables.tf + terraform.tfvars
-├── .checkov.yaml           ← security rules with documented justifications
-├── README.md               ← 3-step deployment guide
-└── SECURITY-POSTURE.md     ← 12-framework compliance mapping
+my-stack/
+├── main.tf, app.tf, database.tf, identity.tf, keyvault.tf, monitoring.tf, ...
+├── wiring.tf               ← brownfield wiring (3 modes: remote state / VNet ID / lookup by name)
+├── finops.tf               ← budget alerts, auto-shutdown, storage lifecycle
+├── governance.tf           ← Azure Policy, optional resource locks
+├── envs/prod.tfvars        ← enterprise variables, ready to customise
+├── .github/workflows/deploy-prod.yml  ← GitHub Actions OIDC pipeline
+├── README.md, INSTALL.md, CHANGELOG.md
+└── SECURITY-POSTURE.md     ← 61 controls mapped across 4 frameworks
 ```
 
 ---
 
-#### Try it
+#### Try it free
 
-🆓 **5 stacks are free** — no account needed, download and deploy:
+🆓 **10 dev stacks open source on GitHub** — MIT licensed, no account needed:
 
-| Stack | What it does |
-|-------|-------------|
-| [Governance Organization](https://github.com/Aethronops/aethronops/tree/main/stacks_free/governance-organization) | Management Groups, Policy initiatives, centralized monitoring |
-| [Governance Subscription](https://github.com/Aethronops/aethronops/tree/main/stacks_free/governance-subscription) | Subscription-level Policy, RBAC, budgets |
-| [Platform Management](https://github.com/Aethronops/aethronops/tree/main/stacks_free/platform-management) | Log Analytics, Automation Account |
-| [Storage Baseline](https://github.com/Aethronops/aethronops/tree/main/stacks_free/storage-baseline) | Storage Account with Key Vault, monitoring, network isolation |
-| [Static Web App](https://github.com/Aethronops/aethronops/tree/main/stacks_free/static-web-app) | Azure Static Web App with Key Vault, Storage, monitoring |
+| Stack | Database | Compute |
+|-------|---------|---------|
+| [app-service-postgresql](https://github.com/Aethronops/aethronops/tree/main/stacks/app-service-postgresql) | PostgreSQL Flexible Server | App Service |
+| [app-service-sql](https://github.com/Aethronops/aethronops/tree/main/stacks/app-service-sql) | Azure SQL Database | App Service |
+| [app-service-cosmosdb](https://github.com/Aethronops/aethronops/tree/main/stacks/app-service-cosmosdb) | Cosmos DB (NoSQL) | App Service |
+| [app-service-mysql](https://github.com/Aethronops/aethronops/tree/main/stacks/app-service-mysql) | MySQL Flexible Server | App Service |
+| [app-service-mongodb](https://github.com/Aethronops/aethronops/tree/main/stacks/app-service-mongodb) | DocumentDB (MongoDB vCore) | App Service |
+| [container-apps-postgresql](https://github.com/Aethronops/aethronops/tree/main/stacks/container-apps-postgresql) | PostgreSQL Flexible Server | Container Apps |
+| [container-apps-sql](https://github.com/Aethronops/aethronops/tree/main/stacks/container-apps-sql) | Azure SQL Database | Container Apps |
+| [container-apps-cosmosdb](https://github.com/Aethronops/aethronops/tree/main/stacks/container-apps-cosmosdb) | Cosmos DB (NoSQL) | Container Apps |
+| [container-apps-mysql](https://github.com/Aethronops/aethronops/tree/main/stacks/container-apps-mysql) | MySQL Flexible Server | Container Apps |
+| [container-apps-mongodb](https://github.com/Aethronops/aethronops/tree/main/stacks/container-apps-mongodb) | DocumentDB (MongoDB vCore) | Container Apps |
 
-**Need something specific?** [Request a custom stack →](https://aethronops.com/contact/)
+**Need the production version?** [aethronops.com/stacks](https://aethronops.com/stacks) — 199 € HT per stack, or 499 € HT for all 11 (one-time, no subscription).
 
 ---
 
