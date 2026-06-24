@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0078D4,100:1B3A57&height=170&section=header&text=Fr%C3%A9d%C3%A9ric%20LEROY&fontSize=42&fontColor=ffffff&desc=Azure%20Cloud%20%26%20Database%20Automation&descSize=18&descAlignY=72" width="100%" />
+# Frédéric LEROY
+
+**Azure Cloud & Database Automation**
 
 ![MCT](https://img.shields.io/badge/MCT-Certified_Trainer-5E5E5E?style=flat-square&logo=microsoft&logoColor=white)
 ![AZ-305](https://img.shields.io/badge/AZ--305-Solutions_Architect_Expert-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
